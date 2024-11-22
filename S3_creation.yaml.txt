@@ -1,0 +1,10 @@
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties: 
+       BucketName: should be unique 
+       DeletionPolicy: Retain
+    IntelligentTieringConfiguration:
+      Id: Tier1
+      Status: Enabled
+      Tiering:
